@@ -23,11 +23,12 @@ try:
         print('{'+"'"+key +"'"+ " : " + "'"+r.headers[key] +"'"+"}")
 
     # Ερώτημα 2
+    '''
     if "server" in r.headers.keys():
         print("Server software:" + r.headers["server"])
     for cookie in r.cookies:
         print("Cookie "+ cookie.name, end = ' expires ' )
-        print(datetime.datetime.fromtimestamp(int(cookie.expires)).strftime('%Y-%m-%d %H:%M:%S'))    
+        print(datetime.datetime.fromtimestamp(int(cookie.expires)).strftime('%Y-%m-%d %H:%M:%S'))   ''' 
 except:
     print("Incorrect URL. Try again...\n")
     
